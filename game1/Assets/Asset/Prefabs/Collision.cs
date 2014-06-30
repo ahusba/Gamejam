@@ -2,20 +2,14 @@
 using System.Collections;
 
 public class Collision : MonoBehaviour {
-	public Collider leftHand;
+	public Collider physicsCollider;
 	// Use this for initialization
 	void Start () {
 	
 	}
 
- 	void OnTriggerEnter(Collider other)
-		{
-			//if (other.gameObject.name == "TopLeft")
-			//{
-				Debug.Log("TopLeft");
-			//}
-
-
+ 	void OnTriggerEnter(Collider other){	
+		Debug.Log(other.gameObject.name);		
 	}
 	
 	// Update is called once per frame

@@ -2,18 +2,17 @@
 using System.Collections;
 
 public class Collision : MonoBehaviour {
-	public Collider leftHand;
+	public Collider physCollider;
 	// Use this for initialization
 	void Start () {
 	
 	}
 
- 	void OnTriggerEnter(Collider other)
-		{
-			//if (other.gameObject.name == "TopLeft")
-			//{
-				Debug.Log("TopLeft");
-			//}
+ 	void OnTriggerEnter(Collider other){
+		//if (other.gameObject.name == "TopLeft")
+		//{
+			Debug.Log(other.gameObject.name);
+		//}
 
 
 	}

@@ -30,6 +30,9 @@ public class Level {
 }
 
 public class GameController : MonoBehaviour {
+	public GameObject[] quadrants;
+	public float setTime;
+	float timer;
 
 	private Level CreateLevel (string filename, int diff){
 		Level level = new Level (diff);
@@ -67,10 +70,20 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Level level = CreateLevel ("Resources/movelist.txt", 1);
+		timer = setTime;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (timer > 0) {
+			timer -= 1;
+		}
+		if (timer <= 0){
+			timer = setTime;
+			foreach (GameObject go in quadrants){
+				QuadrantActivate qa = (QuadrantActivate) go.GetComponent<QuadrantActivate>();
+				qa.Deactivate();
+			}
+		}
 	}
 }

@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Asset\Prefabs\Collision.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\QuadrantActivate.cs">
     <Files>
-      <File FileName="Assets\Asset\Prefabs\Collision.cs" Line="13" Column="9" />
+      <File FileName="Assets\Asset\Prefabs\Collision.cs" Line="18" Column="2" />
+      <File FileName="Assets\Script\QuadrantActivate.cs" Line="17" Column="29" />
+      <File FileName="Assets\Script\GameController.cs" Line="76" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
